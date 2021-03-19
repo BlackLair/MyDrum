@@ -68,7 +68,9 @@ public class MainActivity extends AppCompatActivity {
         btn_drum[3].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                spool[2].autoPause();
                 spool[3].play(key[3], 2, 2, 0, 0, 1);
+
             }
         });
         btn_drum[4].setOnClickListener(new View.OnClickListener() {
