@@ -2,6 +2,7 @@ package com.example.mydrum;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.pm.ActivityInfo;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Bundle;
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         btn_drum[0]=(Button)findViewById(R.id.kick);
         btn_drum[1]=(Button)findViewById(R.id.snare);
         btn_drum[2]=(Button)findViewById(R.id.hat_open);
