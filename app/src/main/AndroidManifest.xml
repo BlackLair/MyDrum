@@ -8,7 +8,7 @@
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-
+        android:label="myDrum"
         android:theme="@style/Theme.MyDrum">
         <activity android:name=".MainActivity">
             <intent-filter>
