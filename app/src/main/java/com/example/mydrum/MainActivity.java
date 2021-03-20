@@ -47,62 +47,78 @@ public class MainActivity extends AppCompatActivity {
         key[6]= spool[6].load(this, R.raw.tom_h,1);
         key[7]= spool[7].load(this, R.raw.tom_m,1);
         key[8]= spool[8].load(this, R.raw.tom_l,1);
-        btn_drum[0].setOnClickListener(new View.OnClickListener() {
+        btn_drum[0].setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View view) {
-                spool[0].play(key[0], 1, 1, 0, 0, 1);
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                if(motionEvent.getAction()==MotionEvent.ACTION_DOWN)spool[0].play(key[0], 1, 1, 0, 0, 1);
+                return false;
             }
         });
-        btn_drum[1].setOnClickListener(new View.OnClickListener() {
+        btn_drum[1].setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View view) {
-                spool[1].play(key[1], (float)0.9, (float)0.9, 0, 0, 1);
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN)
+                    spool[1].play(key[1], (float) 0.9, (float) 0.9, 0, 0, 1);
+                return false;
             }
         });
-        btn_drum[2].setOnClickListener(new View.OnClickListener() {
+        btn_drum[2].setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View view) {
-                spool[2].play(key[2], (float)0.4, (float)0.4, 0, 0, 1);
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) spool[2].play(key[2], (float) 0.4, (float) 0.4, 0, 0, 1);
+                return false;
             }
         });
-        btn_drum[3].setOnClickListener(new View.OnClickListener() {
+        btn_drum[3].setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View view) {
-                spool[2].autoPause();
-                spool[3].play(key[3], 2, 2, 0, 0, 1);
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    spool[2].autoPause();
+                    spool[3].play(key[3], 2, 2, 0, 0, 1);
 
+                }
+                return false;
             }
         });
-        btn_drum[4].setOnClickListener(new View.OnClickListener() {
+        btn_drum[4].setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View view) {
-                spool[4].play(key[4], (float)0.8, (float)0.8, 0, 0, 1);
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                if(motionEvent.getAction()==MotionEvent.ACTION_DOWN)
+                    spool[4].play(key[4], (float)0.8, (float)0.8, 0, 0, 1);
+                return false;
             }
         });
-        btn_drum[5].setOnClickListener(new View.OnClickListener() {
+        btn_drum[5].setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View view) {
-                spool[5].play(key[5], (float)0.8, (float)0.8, 0, 0, 1);
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                if(motionEvent.getAction()==MotionEvent.ACTION_DOWN)
+                    spool[5].play(key[5], (float)0.8, (float)0.8, 0, 0, 1);
+                return false;
             }
         });
-        btn_drum[6].setOnClickListener(new View.OnClickListener() {
+        btn_drum[6].setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View view) {
-                spool[6].play(key[6], 1, 1, 0, 0, 1);
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                if(motionEvent.getAction()==MotionEvent.ACTION_DOWN)
+                    spool[6].play(key[6], 1, 1, 0, 0, 1);
+                return false;
             }
         });
-        btn_drum[7].setOnClickListener(new View.OnClickListener() {
+        btn_drum[7].setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View view) {
-                spool[7].play(key[7], 1, 1, 0, 0, 1);
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                if(motionEvent.getAction()==MotionEvent.ACTION_DOWN)
+                    spool[7].play(key[7], 1, 1, 0, 0, 1);
+                return false;
             }
         });
-        btn_drum[8].setOnClickListener(new View.OnClickListener() {
+        btn_drum[8].setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View view) {
-                spool[8].play(key[8], 1, 1, 0, 0, 1);
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                if(motionEvent.getAction()==MotionEvent.ACTION_DOWN)
+                    spool[8].play(key[8], 1, 1, 0, 0, 1);
+                return false;
             }
         });
-
     }
 }
