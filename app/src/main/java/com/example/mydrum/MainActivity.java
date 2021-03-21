@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         spool[8] = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);*/
 
         key[0]= spool.load(this, R.raw.kick,1);
-        key[1]= spool.load(this, R.raw.snare,1);
+        key[1]= spool.load(this, R.raw.snare ,1);
         key[2]= spool2.load(this, R.raw.hat_open,1);  // autoPause 사용 위함.
         key[3]= spool.load(this, R.raw.hat_closed,1);
         key[4]= spool.load(this, R.raw.crash_right,1);
